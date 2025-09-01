@@ -3,6 +3,8 @@
 Este repositório apresenta um conjunto de análises em Business Intelligence aplicadas ao setor de Recursos Humanos, desenvolvidas com o Power BI e com ênfase no uso de expressões DAX de nível não trivial.
 O objetivo é transformar dados de funcionários em informações claras, explorando cálculos avançados e boas práticas de visualização para apoiar a tomada de decisão.
 
+---
+
 📁 Estrutura das Análises
 
 O projeto foi segmentado em diferentes blocos de perguntas de negócio, cada uma resolvida com expressões DAX específicas:
@@ -23,6 +25,8 @@ Disponibilidade para Hora Extra – Visual em pizza após padronização dos val
 
 Índice de Envolvimento no Trabalho – Engenharia de atributos para transformar índices numéricos (1–4) em categorias qualitativas (“Ruim”, “Médio”, “Bom”, “Excelente”).
 
+---
+
 🎯 Diretrizes de Visualização
 
 Cards conjugados: Totais e percentuais (masculino/feminino) exibidos em conjunto, evitando redundância.
@@ -39,7 +43,10 @@ Substituições de valores categóricos feitas via Power Query.
 
 Caixas e formas usadas apenas para destacar visuais, sem comprometer a interatividade.
 
+---
+
 🧠 Considerações Analíticas
+---
 🔍 Contagem e Experiência
 
 DISTINCTCOUNT aplicado sobre Id_Funcionario garante contagem correta de indivíduos únicos.
@@ -54,11 +61,15 @@ Uso de variáveis (VAR) para clareza, reaproveitamento e eficiência.
 
 Percentuais calculados com DIVIDE para evitar erro de divisão por zero.
 
+---
+
 🗂️ Promoções
 
 Criação de coluna condicional StatusPromo no Power Query para determinar elegibilidade (≥ 5 anos = promover).
 
 Medidas derivadas: TotalFuncPromover, TotalNaoPromover, %Promover.
+
+---
 
 🏷️ Outras Métricas Relevantes
 
@@ -67,6 +78,8 @@ Salário médio: AVERAGE(DatasetRH[Salario_Mensal]).
 Engajamento: Conversão de escala numérica para categorias literais.
 
 Disponibilidade para hora extra: Padronização “S/N” → “Sim/Não”.
+
+---
 
 🧩 Boas Práticas Adotadas
 
@@ -78,6 +91,7 @@ Verificação de valores distintos com VALUES(DatasetRH[StatusPromo]) para evita
 
 Sempre validar se o visual atende à audiência: clareza > estética.
 
+---
 🛠️ Ferramentas Utilizadas
 
 Power BI
@@ -88,10 +102,14 @@ DAX (expressões avançadas)
 
 Git e GitHub
 
+---
+
 📂 Estrutura do Projeto
 📁 Projeto_RH
  ┣ 📄 ProjetoRH.pbix
  ┣ 📄 README.md
+
+---
 
 🚀 Como Visualizar
 
@@ -101,14 +119,18 @@ Abra-o no Power BI Desktop
 
 Navegue entre as páginas e explore as medidas criadas em DAX
 
+---
+
 🤝 Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/rafael-paiva-martins/) 
  para acompanhar mais projetos, discutir expressões DAX ou colaborar em soluções de análise de dados.
-
+---
 
  👔 HR Data Analysis – Advanced DAX Applications
 
 This repository presents a set of Business Intelligence analyses applied to Human Resources, developed with Power BI and focusing on the use of non-trivial DAX expressions.
 The goal is to transform HR data into actionable insights by leveraging advanced calculations and visualization best practices to support decision-making.
+
+---
 
 📁 Analysis Structure
 
@@ -130,6 +152,8 @@ Overtime Availability – Pie chart after standardizing values (“Yes”/“No�
 
 Work Engagement Index – Feature engineering to map numeric indexes (1–4) into qualitative categories (“Poor”, “Average”, “Good”, “Excellent”).
 
+---
+
 🎯 Visualization Guidelines
 
 Conjugated cards: Totals and percentages (male/female) shown together, avoiding redundancy.
@@ -146,6 +170,8 @@ Standardization of categorical values via Power Query.
 
 Shapes and boxes used for layout clarity, without compromising interactivity.
 
+---
+
 🧠 Analytical Highlights
 🔍 Counting and Experience
 
@@ -161,11 +187,15 @@ Variables (VAR) improve readability and efficiency.
 
 Percentages calculated with DIVIDE to avoid division by zero errors.
 
+---
+
 🗂️ Promotion Rules
 
 Conditional column StatusPromo created in Power Query to define eligibility (≥ 5 years = eligible).
 
 Derived measures: TotalFuncPromover, TotalNaoPromover, %Promover.
+
+---
 
 🏷️ Other Key Metrics
 
@@ -174,6 +204,8 @@ Average Salary: AVERAGE(DatasetRH[Salario_Mensal]).
 Engagement: Numeric index mapped into categories.
 
 Overtime Availability: Standardization of “S/N” → “Yes/No”.
+
+---
 
 🧩 Best Practices
 
@@ -185,6 +217,8 @@ Validation with VALUES(DatasetRH[StatusPromo]) to detect literal mismatches.
 
 Always validate whether the visual is audience-friendly: clarity > aesthetics.
 
+---
+
 🛠️ Tools Used
 
 Power BI
@@ -195,10 +229,14 @@ DAX (advanced expressions)
 
 Git & GitHub
 
+---
+
 📂 Project Structure
 📁 HR_Project
  ┣ 📄 HR_Project.pbix
  ┣ 📄 README.md
+
+---
 
 🚀 How to View
 
@@ -207,6 +245,8 @@ Download the .pbix file from this repository
 Open it in Power BI Desktop
 
 Navigate through the pages and explore the created DAX measures
+
+---
 
 🤝 Connect
 
